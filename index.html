@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logoAlura" src="./assets/logo-alura.png" alt="Logo da Alura">
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__mensagem">
+            <textarea class="text-area" cols="40" rows="10" placeholder="Digite sua mensagem..."></textarea>
+
+            <div class="conteudo__informacao">
+                <h6>
+                    <img src="./assets/exclamacao_aviso.png" alt="ponto de exclamação">
+                    Apenas letras minúsculas e sem acento.
+                </h6>
+            </div>
+
+            <div class="conteudo__botoes">
+                <button class="btn-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="conteudo__resposta">
+            <h6 class="mensagem-principal">Mensagem não encontrada</h6>
+            <p class="mensagem-secundaria">Digite um texto que você deseja criptografar ou descriptografar</p>
+            <textarea class="conteudo__resposta__mensagem" cols="20" rows="15"></textarea>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Augusto Bruno Menezes.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

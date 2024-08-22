@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #0A3871;
+    --cor-secundaria: #D8DFE8;
+    --cor-terciária: white;
+    --cor-acessorio: #495054;
+
+}
+
+*{
+    background-color: #e5e5e5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    
+    line-height: 150%;
+
+}
+
+.body{
+    box-sizing: border-box;
+
+}
+
+.conteudo{
+    display: flex;
+    
+}
+
+.logoAlura{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 2%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    border: none;
+    color: var(--cor-primaria);
+    margin-top: 5%;
+    
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+::placeholder {color: var(--cor-primaria);}
+    .text-area:focus{
+        outline: none;
+    }
+
+.conteudo__resposta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.mensagem-principal,
+.mensagem-secundaria{
+    position: absolute;
+    color: black;
+    text-align: center;
+    width: 50%;
+
+}
+
+.mensagem-principal{
+    top: 460px;
+    margin-left: 60px;
+
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.mensagem-secundaria{
+    top: 520px;
+    margin-left: 60px;
+
+    font-size: 10px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.conteudo__resposta__mensagem{
+    background-color: var(--cor-terciária);
+    background-image: url(/assets/personagem-mensagem.svg);
+    background-position: center;
+    background-size: 420px;
+    background-repeat: no-repeat;
+
+
+
+    margin-left: 50px;
+    margin-top: 40px;
+    padding-left: 20px;
+    
+    border-radius: 24px;
+    border: 1px solid var(--cor-primaria);
+    height: 70%;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+   
+
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.conteudo__resposta{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.conteudo__botoes{
+    display: flex;
+    margin-top: 18px;
+    gap: 24px;
+}
+
+.btn-criptografar{
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--cor-terciária);
+
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px;
+    width: 328px;
+}
+
+.btn-criptografar:hover{
+    background-color: var(--cor-acessorio);
+
+}
+
+
+
+.btn-descriptografar{
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--cor-primaria);
+
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px;
+
+    width: 328px;
+
+
+}
+
+.btn-descriptografar:hover{
+    background-color: var(--cor-acessorio);
+    color: var(--cor-secundaria);
+}
+
+.btn-copiar{
+    background-color: var(--cor-terciária);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--cor-primaria);
+
+   
+    margin-left: 105px;
+    margin-top: 650px;
+    position: absolute;
+
+
+    font-size: 16px;
+    font-weight: 400;
+    padding: 24px;
+
+    width: 336px;
+}
+
+.btn-copiar:hover{
+    background-color: var(--cor-acessorio);
+    color: var(--cor-secundaria);
+}
+
+.conteudo__informacao {
+    color: var(--cor-acessorio);
+    font-size: 25px;
+}
+
+.rodape {
+
+    text-align: center;
+    color: var(--cor-primaria);  
+}
